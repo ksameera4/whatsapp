@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#29CDBD">
+
+     <androidx.appcompat.widget.LinearLayoutCompat
+         android:layout_width="wrap_content"
+         android:layout_height="380dp"
+         android:orientation="vertical"
+         android:background="@color/green"/>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="WHATSAPP"
+        android:textColor="#FF9E80"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:src="@drawable/whatsapp6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="#FF8DA4"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send OTP"
+        android:background="@drawable/round_btn"
+        android:textColor="@color/white"
+        android:layout_below="@id/welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="390dp"
+         />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@id/welcome"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="86dp"
+        android:background="@color/purple_700"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="enter mob no:"
+        android:textColorHint="@color/black" />
+
+
+</RelativeLayout>
